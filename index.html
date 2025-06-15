@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RD Tipografía – Previsualización</title>
+  <style>
+    :root {
+      --blue-main: #0e9dc0;
+      --pink-main: #f683a0;
+      --text-dark: #444444;
+    }
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+      vertical-align: middle;
+    }
+    th {
+      background: #eee;
+    }
+    .preview {
+      padding: 0.5rem;
+    }
+    /* Clases tipográficas */
+    .rd-title {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--blue-main);
+    }
+    .rd-subtitle {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--blue-main);
+    }
+    .rd-subtitle-small {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+      color: var(--blue-main);
+    }
+    .rd-title-blue {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--blue-main);
+    }
+    .rd-title-pink {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--pink-main);
+    }
+    .rd-subtitle-blue {
+      font-size: 1.3rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: var(--blue-main);
+    }
+    .rd-subtitle-pink {
+      font-size: 1.3rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      color: var(--pink-main);
+    }
+    .rd-subtitle-blue-sm {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+      color: var(--blue-main);
+    }
+    .rd-subtitle-pink-sm {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+      color: var(--pink-main);
+    }
+    .rd-subtitle-up-light-blue {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--blue-main);
+      opacity: 0.85;
+    }
+    .rd-subtitle-up-light-pink {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--pink-main);
+      opacity: 0.85;
+    }
+    .rd-paragraph {
+      font-size: 1rem;
+      color: var(--text-dark);
+      max-width: 700px;
+      line-height: 1.5;
+    }
+    .rd-paragraph-blue {
+      color: var(--blue-main);
+    }
+    .rd-paragraph-pink {
+      color: var(--pink-main);
+    }
+    .rd-paragraph-dark {
+      color: var(--text-dark);
+    }
+    .rd-highlight {
+      color: var(--pink-main);
+      font-weight: 500;
+    }
+    .rd-italic {
+      font-style: italic;
+    }
+    .rd-text-emphasis {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+    .rd-divider {
+      border: none;
+      border-top: 1px solid var(--blue-main);
+      margin: 0.5rem 0;
+      width: 100%;
+      max-width: 600px;
+    }
+    .group-header {
+      background: var(--blue-main);
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Rey Draco Pet Hub – Tabla de Clases Tipográficas</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Clase</th>
+        <th>Atributos</th>
+        <th>Descripción</th>
+        <th>Previsualización</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="group-header"><td colspan="4">Títulos</td></tr>
+      <tr>
+        <td><code>.rd-title</code></td>
+        <td>2rem · 600 · uppercase · azul</td>
+        <td>Título principal</td>
+        <td class="preview"><span class="rd-title">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-title-blue</code></td>
+        <td>2rem · 600 · azul</td>
+        <td>Título azul sin uppercase</td>
+        <td class="preview"><span class="rd-title-blue">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-title-pink</code></td>
+        <td>2rem · 600 · rosa</td>
+        <td>Título rosa</td>
+        <td class="preview"><span class="rd-title-pink">Rey Draco Pet Hub</span></td>
+      </tr>
+
+      <tr class="group-header"><td colspan="4">Subtítulos</td></tr>
+      <tr>
+        <td><code>.rd-subtitle</code></td>
+        <td>1rem · 500 · uppercase · azul</td>
+        <td>Subtítulo estándar</td>
+        <td class="preview"><span class="rd-subtitle">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-small</code></td>
+        <td>1.1rem · 500 · azul</td>
+        <td>Subtítulo intermedio</td>
+        <td class="preview"><span class="rd-subtitle-small">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-up-light-blue</code></td>
+        <td>0.9rem · 500 · uppercase · azul · 0.85</td>
+        <td>Subtítulo uppercase ligero</td>
+        <td class="preview"><span class="rd-subtitle-up-light-blue">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-up-light-pink</code></td>
+        <td>0.9rem · 500 · uppercase · rosa · 0.85</td>
+        <td>Misma variante en rosa</td>
+        <td class="preview"><span class="rd-subtitle-up-light-pink">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-blue</code></td>
+        <td>1.3rem · 500 · azul</td>
+        <td>Subtítulo destacado azul</td>
+        <td class="preview"><span class="rd-subtitle-blue">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-pink</code></td>
+        <td>1.3rem · 500 · rosa</td>
+        <td>Subtítulo destacado rosa</td>
+        <td class="preview"><span class="rd-subtitle-pink">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-blue-sm</code></td>
+        <td>1.1rem · 600 · azul</td>
+        <td>Subtítulo pequeño azul</td>
+        <td class="preview"><span class="rd-subtitle-blue-sm">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-subtitle-pink-sm</code></td>
+        <td>1.1rem · 600 · rosa</td>
+        <td>Subtítulo pequeño rosa</td>
+        <td class="preview"><span class="rd-subtitle-pink-sm">Rey Draco Pet Hub</span></td>
+      </tr>
+
+      <tr class="group-header"><td colspan="4">Párrafos y Texto</td></tr>
+      <tr>
+        <td><code>.rd-paragraph</code></td>
+        <td>1rem · gris oscuro</td>
+        <td>Párrafo base</td>
+        <td class="preview"><p class="rd-paragraph">Rey Draco Pet Hub</p></td>
+      </tr>
+      <tr>
+        <td><code>.rd-paragraph-blue</code></td>
+        <td>1rem · azul</td>
+        <td>Párrafo en azul principal</td>
+        <td class="preview"><p class="rd-paragraph rd-paragraph-blue">Rey Draco Pet Hub</p></td>
+      </tr>
+      <tr>
+        <td><code>.rd-paragraph-pink</code></td>
+        <td>1rem · rosa</td>
+        <td>Párrafo en rosa principal</td>
+        <td class="preview"><p class="rd-paragraph rd-paragraph-pink">Rey Draco Pet Hub</p></td>
+      </tr>
+      <tr>
+        <td><code>.rd-paragraph-dark</code></td>
+        <td>1rem · gris oscuro</td>
+        <td>Párrafo en gris oscuro</td>
+        <td class="preview"><p class="rd-paragraph rd-paragraph-dark">Rey Draco Pet Hub</p></td>
+      </tr>
+      <tr>
+        <td><code>.rd-highlight</code></td>
+        <td>color rosa · 500</td>
+        <td>Énfasis en rosa</td>
+        <td class="preview"><span class="rd-highlight">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-italic</code></td>
+        <td>cursiva</td>
+        <td>Texto en cursiva</td>
+        <td class="preview"><span class="rd-italic">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-text-emphasis</code></td>
+        <td>semi-bold · tracking 0.5px</td>
+        <td>Texto destacado</td>
+        <td class="preview"><span class="rd-text-emphasis">Rey Draco Pet Hub</span></td>
+      </tr>
+      <tr>
+        <td><code>.rd-divider</code></td>
+        <td>hr · azul</td>
+        <td>Línea decorativa</td>
+        <td class="preview"><hr class="rd-divider"></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
